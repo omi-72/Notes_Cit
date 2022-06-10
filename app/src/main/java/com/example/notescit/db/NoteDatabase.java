@@ -1,4 +1,4 @@
 package com.example.notescit.db;
 
-public class NoteDatabase {
+public abstract class NoteDatabase {
 }
