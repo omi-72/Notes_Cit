@@ -3,9 +3,12 @@ package com.example.notescit.db;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity
 public class Note {
+    @PrimaryKey(autoGenerate = true)
+    int id;
 
     @ColumnInfo(name = "title")
     String noteTitle;
