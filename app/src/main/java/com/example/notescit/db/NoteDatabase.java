@@ -1,4 +1,6 @@
 package com.example.notescit.db;
 
-public abstract class NoteDatabase {
+import androidx.room.RoomDatabase;
+
+public abstract class NoteDatabase extends RoomDatabase {
 }
