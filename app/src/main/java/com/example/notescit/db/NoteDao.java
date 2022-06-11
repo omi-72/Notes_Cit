@@ -1,6 +1,7 @@
 package com.example.notescit.db;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Update;
 
@@ -11,5 +12,7 @@ public interface NoteDao {
      void insertNote(Note note);
     @Update
     void  updateNote(Note note);
+    @Delete
+    void  deleteNote(Note note);
 
 }
