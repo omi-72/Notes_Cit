@@ -24,4 +24,20 @@ public class Note {
         this.noteDetails = noteDetails;
         this.notePriority = notePriority;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNoteTitle() {
+        return noteTitle;
+    }
+
+    public String getNoteDetails() {
+        return noteDetails;
+    }
+
+    public String getNotePriority() {
+        return notePriority;
+    }
 }
