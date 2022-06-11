@@ -19,4 +19,9 @@ public class Note {
     @ColumnInfo(name = "priority")
     String notePriority;
 
+    public Note(String noteTitle, String noteDetails, String notePriority) {
+        this.noteTitle = noteTitle;
+        this.noteDetails = noteDetails;
+        this.notePriority = notePriority;
+    }
 }
