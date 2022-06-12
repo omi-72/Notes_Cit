@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this,
                 NoteDatabase.class,
                 "Note_db"
-        ).build();
+        ).allowMainThreadQueries().build();
 
         Note note= new Note("Exam", "will start from tomorrow", "High");
 
