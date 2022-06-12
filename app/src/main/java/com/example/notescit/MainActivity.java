@@ -5,6 +5,7 @@ import androidx.room.Room;
 
 import android.os.Bundle;
 
+import com.example.notescit.db.Note;
 import com.example.notescit.db.NoteDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
                 NoteDatabase.class,
                 "Note_db"
         ).build();
+
+        Note note= new Note("Exam", "will start from tomorrow", "High");
+
     }
 }
