@@ -1,6 +1,7 @@
 package com.example.notescit;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import android.os.Bundle;
 
@@ -13,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NoteDatabase
+        NoteDatabase noteDatabase= Room.databaseBuilder(
+                MainActivity.this,
+                NoteDatabase.class,
+                "Note_db"
+        ).build();
     }
 }
