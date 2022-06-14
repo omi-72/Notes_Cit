@@ -15,11 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        NoteDatabase noteDatabase= Room.databaseBuilder(
-                MainActivity.this,
-                NoteDatabase.class,
-                "Note_db"
-        ).allowMainThreadQueries().build();
+
 
         Note note= new Note("Exam", "will start from tomorrow", "High");
 
