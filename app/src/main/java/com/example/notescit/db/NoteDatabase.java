@@ -10,12 +10,13 @@ import com.example.notescit.MainActivity;
 
 @Database(entities = {Note.class}, version = 1, exportSchema = false)
 public abstract class NoteDatabase extends RoomDatabase {
+    static NoteDatabase noteDatabase=null;
 
     public abstract NoteDao getDao();
 
     public static NoteDatabase getInstance(Context context){
 
-        NoteDatabase noteDatabase= Room.databaseBuilder(
+        = Room.databaseBuilder(
                 context,
                 NoteDatabase.class,
                 "Note_db"
