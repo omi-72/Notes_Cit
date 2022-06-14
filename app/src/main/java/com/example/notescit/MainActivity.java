@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         Note note= new Note("Exam", "will start from tomorrow", "High");
 
-        noteDatabase.getDao().insertNote(note);
+       NoteDatabase.getInstance(this).getDao().insertNote(note);
 
     }
 }
