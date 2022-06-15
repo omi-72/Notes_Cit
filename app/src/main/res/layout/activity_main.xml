@@ -21,7 +21,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="8dp"
         android:text="Add Note"
-        
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
         app:icon="@drawable/ic_round_add_24"
         android:layout_height="wrap_content"/>
 
