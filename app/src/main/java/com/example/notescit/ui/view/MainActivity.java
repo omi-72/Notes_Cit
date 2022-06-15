@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
        fab_addNote= findViewById(R.id.add_note);
 
        fab_addNote.setOnClickListener(v -> {
-        startActivity(new Intent());
+        startActivity(new Intent(getApplicationContext(), AddNoteActivity.class));
 
        });
 
