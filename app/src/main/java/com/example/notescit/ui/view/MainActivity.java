@@ -1,4 +1,4 @@
-package com.example.notescit.ui;
+package com.example.notescit.ui.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
