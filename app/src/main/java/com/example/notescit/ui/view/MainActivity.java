@@ -3,6 +3,7 @@ package com.example.notescit.ui.view;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
        fab_addNote= findViewById(R.id.add_note);
 
        fab_addNote.setOnClickListener(v -> {
-           
+        startActivity(new Intent());
+
        });
 
     }
