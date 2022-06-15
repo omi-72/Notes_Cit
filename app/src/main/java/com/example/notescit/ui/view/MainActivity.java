@@ -8,8 +8,10 @@ import android.os.Bundle;
 import com.example.notescit.R;
 import com.example.notescit.db.Note;
 import com.example.notescit.db.NoteDatabase;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
+    ExtendedFloatingActionButton fab_addNote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Note note= new Note("Exam", "will start from tomorrow", "High");
 
        NoteDatabase.getInstance(this).getDao().insertNote(note);
+
+       
 
     }
 }
