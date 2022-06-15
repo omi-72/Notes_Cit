@@ -1,10 +1,11 @@
-package com.example.notescit;
+package com.example.notescit.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.os.Bundle;
 
+import com.example.notescit.R;
 import com.example.notescit.db.Note;
 import com.example.notescit.db.NoteDatabase;
 
