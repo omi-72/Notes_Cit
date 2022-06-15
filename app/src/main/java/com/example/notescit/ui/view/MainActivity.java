@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
        NoteDatabase.getInstance(this).getDao().insertNote(note);
 
-       
+       fab_addNote= findViewById(R.id.add_note);
 
     }
 }
