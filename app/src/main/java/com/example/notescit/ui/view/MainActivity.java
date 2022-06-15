@@ -27,11 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
        fab_addNote= findViewById(R.id.add_note);
 
-       fab_addNote.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               
-           }
+       fab_addNote.setOnClickListener(v -> {
+           
        });
 
     }
