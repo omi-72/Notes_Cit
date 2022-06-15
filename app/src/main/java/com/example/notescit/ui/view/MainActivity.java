@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.notescit.R;
 import com.example.notescit.db.Note;
@@ -25,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
        NoteDatabase.getInstance(this).getDao().insertNote(note);
 
        fab_addNote= findViewById(R.id.add_note);
+
+       fab_addNote.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               
+           }
+       });
 
     }
 }
