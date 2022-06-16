@@ -56,14 +56,14 @@
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Details"
+        android:hint="Priority"
         app:endIconMode="dropdown_menu"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:inputType="textMultiLine"
+        <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="none"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
