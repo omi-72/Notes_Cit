@@ -9,8 +9,17 @@
     tools:context=".ui.view.AddNoteActivity">
 
     <ImageView
+        android:layout_marginTop="150dp"
        android:src="@drawable/ic_round_add_24"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:text="Add Note"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    
 
 </LinearLayout>
