@@ -39,4 +39,10 @@ public class AddNoteActivity extends AppCompatActivity {
 
 
     }
+
+    private void insertToDataBase(String title, String details, String priority) {
+
+        
+
+    }
 }
