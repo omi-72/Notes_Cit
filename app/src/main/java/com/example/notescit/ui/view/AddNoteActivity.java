@@ -29,6 +29,7 @@ public class AddNoteActivity extends AppCompatActivity {
         edt_priority= findViewById(R.id.edt_priority);
         btn_addNote= findViewById(R.id.btn_addNote);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, priorityArr);
+        edt_priority.setAdapter(adapter);
 
 
         btn_addNote.setOnClickListener(view -> {
