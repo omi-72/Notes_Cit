@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Note note= new Note("Exam", "will start from tomorrow", "High");
-
-       NoteDatabase.getInstance(this).getDao().insertNote(note);
-
        fab_addNote= findViewById(R.id.add_note);
 
        fab_addNote.setOnClickListener(v -> {

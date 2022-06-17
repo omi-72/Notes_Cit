@@ -7,6 +7,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 import com.example.notescit.R;
+import com.example.notescit.db.Note;
+import com.example.notescit.db.NoteDatabase;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class AddNoteActivity extends AppCompatActivity {
@@ -42,7 +44,9 @@ public class AddNoteActivity extends AppCompatActivity {
 
     private void insertToDataBase(String title, String details, String priority) {
 
-        
+        Note note= new Note("Exam", "will start from tomorrow", "High");
+
+        NoteDatabase.getInstance(this).getDao().insertNote(note);
 
     }
 }
