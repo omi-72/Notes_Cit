@@ -16,6 +16,7 @@ public class AddNoteActivity extends AppCompatActivity {
     AutoCompleteTextView edt_priority;
     TextInputEditText edt_title, edt_details;
     Button btn_addNote;
+    String[] priorityArr = {"High", "Medium", "Low"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
