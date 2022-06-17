@@ -27,7 +27,8 @@ public class AddNoteActivity extends AppCompatActivity {
 
         btn_addNote.setOnClickListener(view -> {
             String title = edt_title.getText().toString().trim();
-            String title = edt_title.getText().toString().trim();
+            String details = edt_details.getText().toString().trim();
+            String priority = edt_priority.getText().toString().trim();
 
 
 
