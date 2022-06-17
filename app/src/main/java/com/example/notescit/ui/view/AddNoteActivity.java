@@ -44,7 +44,7 @@ public class AddNoteActivity extends AppCompatActivity {
 
     private void insertToDataBase(String title, String details, String priority) {
 
-        Note note= new Note("Exam", "will start from tomorrow", "High");
+        Note note= new Note(title, details, "High");
 
         NoteDatabase.getInstance(this).getDao().insertNote(note);
 
