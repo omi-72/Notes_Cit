@@ -3,6 +3,7 @@ package com.example.notescit.ui.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
@@ -27,6 +28,8 @@ public class AddNoteActivity extends AppCompatActivity {
         edt_details= findViewById(R.id.edt_details);
         edt_priority= findViewById(R.id.edt_priority);
         btn_addNote= findViewById(R.id.btn_addNote);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, priorityArr);
+
 
         btn_addNote.setOnClickListener(view -> {
             String title = edt_title.getText().toString().trim();
