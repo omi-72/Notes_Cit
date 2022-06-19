@@ -52,6 +52,9 @@ public class AddNoteActivity extends AppCompatActivity {
         Note note= new Note(title, details, priority);
 
         NoteDatabase.getInstance(this).getDao().insertNote(note);
+        edt_title.setText("");
+        edt_details.setText("");
+        edt_priority.setText("Priority");
 
     }
 }
