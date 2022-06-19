@@ -42,7 +42,7 @@ public class AddNoteActivity extends AppCompatActivity {
             if (title.equals("") || details.equals("")) {
                 Toast.makeText(this, "All Fields Are Required", Toast.LENGTH_SHORT).show();
 
-            }else if (priority.equals(mPriority)){
+            }else if (edt_priority.getTag().equals(mPriority)){
                 Toast.makeText(this, "Select a Priority", Toast.LENGTH_SHORT).show();
 
             }else {
