@@ -19,7 +19,7 @@ public class AddNoteActivity extends AppCompatActivity {
     TextInputEditText edt_title, edt_details;
     Button btn_addNote;
     String[] priorityArr = {"High", "Medium", "Low"};
-    String priority= "Priority";
+    String mPriority= "Priority";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
