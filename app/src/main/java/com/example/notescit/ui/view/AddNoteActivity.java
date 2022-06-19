@@ -39,7 +39,7 @@ public class AddNoteActivity extends AppCompatActivity {
             String details = edt_details.getText().toString().trim();
             String priority = edt_priority.getText().toString().trim();
 
-            if (title.isEmpty() || details.isEmpty() || priority.equals(priority)){
+            if (title.equals("") || details.equals("")) {
                 Toast.makeText(this, "All Fields Are Required", Toast.LENGTH_SHORT).show();
             }else {
                 insertToDataBase(title, details, priority);
