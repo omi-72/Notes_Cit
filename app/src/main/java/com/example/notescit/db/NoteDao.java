@@ -5,6 +5,8 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Update;
 
+import java.util.List;
+
 @Dao
 public interface NoteDao {
 
@@ -14,5 +16,7 @@ public interface NoteDao {
     void  updateNote(Note note);
     @Delete
     void  deleteNote(Note note);
+
+    List<Note> getNotes();
 
 }
