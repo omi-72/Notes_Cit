@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
       List<Note> allNotes = NoteDatabase.getInstance(getApplicationContext()).getDao().getNotes();
 
       for (Note note : allNotes){
-          Log.i("TAG", " ");
+          Log.i("TAG", note.toString());
       }
     }
 }
