@@ -12,6 +12,8 @@ import com.example.notescit.db.Note;
 import com.example.notescit.db.NoteDatabase;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     ExtendedFloatingActionButton fab_addNote;
 
@@ -34,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        NoteDatabase.getInstance(getApplicationContext()).getDao().getNotes();
+      List<Note> allNotes = NoteDatabase.getInstance(getApplicationContext()).getDao().getNotes();
+
+      for (Note note : allNotes){
+          
+      }
     }
 }
