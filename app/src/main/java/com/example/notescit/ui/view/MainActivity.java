@@ -5,6 +5,7 @@ import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.notescit.R;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
       List<Note> allNotes = NoteDatabase.getInstance(getApplicationContext()).getDao().getNotes();
 
       for (Note note : allNotes){
-          
+          Log.i("TAG", " ");
       }
     }
 }
