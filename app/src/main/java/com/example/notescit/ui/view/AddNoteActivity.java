@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.notescit.R;
 import com.example.notescit.db.Note;
@@ -39,7 +40,7 @@ public class AddNoteActivity extends AppCompatActivity {
             String priority = edt_priority.getText().toString().trim();
 
             if (title.isEmpty() || details.isEmpty() || priority.equals(priority)){
-                
+                Toast.makeText(this, "All Fields Are Required", Toast.LENGTH_SHORT).show();
             }
 
 
