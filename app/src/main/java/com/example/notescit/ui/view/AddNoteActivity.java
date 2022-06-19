@@ -37,6 +37,12 @@ public class AddNoteActivity extends AppCompatActivity {
             String title = edt_title.getText().toString().trim();
             String details = edt_details.getText().toString().trim();
             String priority = edt_priority.getText().toString().trim();
+
+            if (title.isEmpty() || details.isEmpty() || priority.equals(priority)){
+                
+            }
+
+
             insertToDataBase(title, details, priority);
 
 
