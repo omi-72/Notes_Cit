@@ -8,6 +8,10 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="This is a Title"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
