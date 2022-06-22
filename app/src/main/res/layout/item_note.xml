@@ -29,6 +29,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
 
     <ImageView
+        android:id="@+id/ivPriority"
         android:src="@drawable/low"
         android:layout_width="0dp"
         android:layout_height="5dp"
